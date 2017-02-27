@@ -1,0 +1,23 @@
+class Queue
+  # your code here
+   attr_accessor :obj
+  def initialize
+    @size = 0
+    @obj = Array.new
+  end
+  def enqueue(item)
+      @obj << item
+  end
+  def dequeue
+      @obj.first
+  end
+  def peek
+      @obj.first
+  end
+  def size
+      @obj.size
+  end
+  def empty?
+      @obj.empty?
+  end
+end
