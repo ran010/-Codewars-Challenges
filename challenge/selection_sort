@@ -1,0 +1,16 @@
+def selection_sort(array)
+    n=array.length
+   for i in 0...n 
+    min=i
+    for j in (i+1)...n
+        if array[j]<array[min]
+            
+            
+            array[j],array[min] = array[min],array[j]
+        end
+    end
+   end
+  puts array
+end
+array=[11,43,56,76,34,22]
+selection_sort(array)
