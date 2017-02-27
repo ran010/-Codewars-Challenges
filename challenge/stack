@@ -1,0 +1,25 @@
+class Stack
+  # your code here
+  attr_accessor :obj
+  def initialize
+    @size = 0
+    @obj = Array.new
+  end
+  def push (obj)
+      
+         @obj<< obj
+  end
+  def pop
+    @obj.pop
+  end
+ 
+  def size
+    @obj.size
+  end
+  def peek
+    obj = @obj.last
+  end
+ def empty?
+   obj=@obj.empty?
+ end
+end
